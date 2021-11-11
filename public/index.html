@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    
+    <title>Welcome to the Yelp Game!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />   
+  </head>
+  <body>
+    
+    <!-- this is the start of content -->
+    <h1>
+      Welcome to the Yelp Game!
+    </h1>
+    
+    <main>
+      <div id = "gamePage">
+        
+        <div class="info">
+          <button id ="infobutton" onclick="location.href='InfoPage.html'">
+          <a href="InfoPage1.html"> Information</a>
+          </button>
+        </div>
+        <br>
+        <div class="shareMsg">
+          <div class ="msg">
+            Share this link with all other players:
+            <a href="https://yelp-game.glitch.me/">https://yelp-game.glitch.me/</a>
+          </div>
+          
+          <div class="msg" id="msg">
+          </div>
+          <div>
+            <button id="copy&paste" onlick="location.href='https://yelp-game.glitch.me/';">
+              Click Here to Copy the Link
+            </button>
+          </div>
+        </div>
+        
+      <form>
+        <div class="container2">
+        <div class="container">
+      <div class ="label">
+         Please enter a Specifc Cuisine:
+        <input type ="text" id="food" autocomplete="off">
+          </div>
+        </div>
+        </div>
+          <br>
+      <div class="label">
+        Please Enter a location:
+        <input type="text" id="location" autocomplete="off">
+        </div>
+        <br>
+      <div class="label">
+        Number of miles from location:
+        <input type="text" id="miles" autocomplete="off">
+        </div>
+      </form>  
+        <br><br>
+        <div class="parentDiv">
+          <img src="https://tenor.com/view/winnie-the-pooh-hungry-dinner-gif-14590837.gif" alt="Hungry">
+        </div>
+        <br>
+      <div class="playButton">
+        <button id="play" onlick ="sendRequest(); return false" >
+        <a href="ListRestaurants.html">List of Restaurants</a>
+        </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- <script src="client.js"> </script> -->
+</html>
